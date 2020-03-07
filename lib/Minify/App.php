@@ -151,7 +151,7 @@ class App extends Container
             return (require $app->groupsConfigPath);
         };
 
-        $this->groupsConfigPath = "{$this->dir}/groupsConfig.php";
+        $this->groupsConfigPath = COMMON_WEB_PUBLIC_MODULE_DIR . "/min.php";
 
         $this->logger = function (App $app) use ($that) {
             $value = $app->config->errorLogger;
